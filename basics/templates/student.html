@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Exam Result</title>
+
+</head>
+<body>
+        <table  style="color:aqua">
+           
+  </h1>
+    {% if result %}
+    <thead><h1><tr><td>Rol number</td> <td>Name</td><td>Total Subject</td><td>Pass Subjects</td><td>Fail Subjects</td></tr></h1></thead>
+    
+    
+    <td>{{ result.id }}</td><td>{{ result.Name }}</td> <td>{{ result.total_sub }}</td><td>{{ result.pass_sub }}</td><td>{{ result.Fail_sub }}</td>
+    
+    {% else %}
+    <h1>No details Found</h1>
+    {% endif %}
+</table>
+
+</body>
+</html>
